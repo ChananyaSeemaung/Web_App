@@ -1,0 +1,147 @@
+
+:root {
+--main-bg-color: #009d63;
+--main-text-color: #FF0099;
+--second-text-color: #bbbec5;
+--second-bg-color: #FFFF99;
+}
+
+.primary-text {
+font-family: 'Mali', cursive;
+color: var(--main-text-color);
+
+}
+
+.second-text {
+color: var(--second-text-color);
+font-family: 'Mali', cursive;
+}
+
+.primary-bg {
+background-color: var(--main-bg-color);
+font-family: 'Mali', cursive;
+}
+
+.secondary-bg {
+background-color: var(--second-bg-color);
+font-family: 'Mali', cursive;
+}
+
+.rounded-full {
+border-radius: 100%;
+}
+
+#wrapper {
+overflow-x: hidden;
+background-image: linear-gradient(
+to right,
+#FFCC99,
+#FF9999,
+#FF6699,
+#FF3399,
+#FF0099
+);
+
+}
+
+#sidebar-wrapper {
+min-height: 100vh;
+margin-left: -15rem;
+-webkit-transition: margin 0.25s ease-out;
+-moz-transition: margin 0.25s ease-out;
+-o-transition: margin 0.25s ease-out;
+transition: margin 0.25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+padding: 0.875rem 1.25rem;
+font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+width: 15rem;
+}
+
+#page-content-wrapper {
+min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+margin-left: 0;
+}
+
+#menu-toggle {
+cursor: pointer;
+
+}
+
+.list-group-item {
+border: none;
+padding: 20px 30px;
+}
+
+.list-group-item.active {
+background-color: transparent;
+color: var(--main-text-color);
+transition: .15s ease;
+font-weight: bold;
+border: none;
+}
+
+@media (min-width: 768px) {
+#sidebar-wrapper {
+margin-left: 0;
+}
+
+#page-content-wrapper {
+min-width: 0;
+width: 100%;
+
+}
+
+#wrapper.toggled #sidebar-wrapper {
+margin-left: -15rem;
+}
+
+}
+.group {
+    display: flex;
+    line-height: 28px;
+    align-items: center;
+    position: relative;
+    max-width: 190px;
+   }
+   
+   .input {
+    width: 100%;
+    height: 40px;
+    line-height: 28px;
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    transition: .3s ease;
+   }
+   
+   .input::placeholder {
+    color: #9e9ea7;
+   }
+   
+   .input:focus, input:hover {
+    outline: none;
+    border-color: rgba(234,76,137,0.4);
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+   }
+   
+   .icon {
+    position: absolute;
+    left: 1rem;
+    fill: #9e9ea7;
+    width: 1rem;
+    height: 1rem;
+   }
+   
